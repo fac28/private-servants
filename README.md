@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Set-up info (Delete at end)
+
+Link to schema mockup:
+https://dbdiagram.io/d/servants-65369755ffbf5169f046a48b
+
 ## Getting Started
 
 First, run the development server:
