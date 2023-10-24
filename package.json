@@ -9,7 +9,7 @@
     "start": "npm run seed && next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "prettier": "prettier --write \"**/*.js\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,css,md,json,scss}\"",
     "test:e2e": "playwright test",
     "test": "node --test",
     "seed": "node lib/database/seed.js"

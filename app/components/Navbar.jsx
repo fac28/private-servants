@@ -1,11 +1,17 @@
-import Link from "next/link"
+import Link from 'next/link'
 export default function Navbar() {
-    return (
-      <nav>
-        <h1 className="text-4xl font-bold from-neutral-600" >Private Servants</h1>
-        <Link href="/">Home </Link>
-        <Link href="/listings">Listings </Link>
-      </nav>
-    )
-  }
-  
+  return (
+    <nav className='p-4 
+    border-b-2 border-gray-200
+    flex items-center justify-between gap-5 
+    my-10 mx-auto 
+    max-w-5xl;'>
+      <Link className='text-3xl font-semibold' href="/">Private Servants</Link>
+      <div className='flex justify-around gap-5'>
+      <Link className='text-2xl font-semibold'href="/listings">Listings </Link>
+      <Link className='text-2xl font-semibold'href="/checkout">Checkout</Link>
+      </div>
+    </nav>
+
+  )
+}
