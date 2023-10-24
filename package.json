@@ -2,7 +2,6 @@
   "name": "private-servants",
   "version": "0.1.0",
   "private": true,
- 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,6 +20,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.7",
     "autoprefixer": "^10.4.16",
