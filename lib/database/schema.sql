@@ -1,14 +1,20 @@
 BEGIN;
 
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS servants (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  email TEXT NOT NULL UNIQUE,
-  password TEXT NOT NULL
+  name TEXT,
+  about TEXT,
+  profile_img TEXT,
+  base_price REAL
+
+
+ 
 );
 
-CREATE TABLE IF NOT EXISTS sessions (
+CREATE TABLE IF NOT EXISTS variants (
   id TEXT PRIMARY KEY,
-  user_id INTEGER REFERENCES users(id)
+task TEXT,
+price_modifier REAL
 );
 
 COMMIT;
