@@ -12,7 +12,7 @@
     "prettier": "prettier --write \"**/*.js\"",
     "test:e2e": "playwright test",
     "test": "node --test",
-    "seed": "node lib/database/seed.js"
+    "seed": "node database/seed.js"
   },
   "dependencies": {
     "better-sqlite3": "^9.0.0",
