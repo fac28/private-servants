@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #bec5e2;
+@layer base {
+  h1,
+  h2 {
+    @apply font-bold text-primary text-lg;
+  }
+}
+@layer components {
+  nav {
+    @apply p-4 border-b-2 border-gray-200 flex justify-between gap-5 items-center gap-5 my-10 mx-auto;
+  }
+}
+
+/* card styles */
+.card {
+  @apply bg-gray-300 
+    shadow-sm 
+    rounded-md 
+    py-4 px-4 my-4 
+    relative 
+    overflow-hidden
+    w-72
+    aspect-square;
+}
+.card h3 {
+  @apply font-bold text-gray-700 text-3xl 
+    mb-0;
+}
+.card p {
+  @apply my-2 text-xl font-bold;
+}
+
+.card img {
+  @apply aspect-square
+  rounded-md;
 }

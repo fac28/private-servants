@@ -1,8 +1,8 @@
 BEGIN;
 
 INSERT INTO servants VALUES
-  (1, 'Boris Johnson','Boris Johnson was a guy','https://cdn1.img.sputniknews.in/img/07e7/08/15/3739344_361:0:2409:2048_1920x0_80_0_0_b9eb680f70f0e800649b2f6c8385f79a.jpg' , 9.60),
-  (2, 'Theresa May','Killer dancer according to Issy a vibe master', 'https://pbs.twimg.com/media/DcD8b1QXkAA7XW5.jpg', 950.00)
+  (1, 'Boris Johnson','Boris Johnson was a guy','/boris_johnson_profile.jpeg' , 9.60),
+  (2, 'Theresa May','Killer dancer according to Issy a vibe master', '/theresa_may_profile.jpg', 950.00)
 
 ON CONFLICT DO NOTHING;
 
