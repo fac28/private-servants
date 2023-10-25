@@ -4,7 +4,7 @@ import { listServants } from '../../lib/model.js'
 export default function RenderServants() {
   const all_servants = listServants()
   return (
-    <ul className="flex flex-col items-center">
+    <ul className="flex flex-wrap gap-3 justify-center">
       {all_servants.map((servant) => (
         <li className="card flex flex-col items-center" key={servant.id}>
           <h3>{servant.name}</h3>
