@@ -13,7 +13,7 @@ export default function Home() {
         Welcome to Private Servants! We connect you with experienced politicians
         who are ready to put their skills to work on your behalf.
       </p>
-      <FilterAndDisplay allServants={allServants} />
+      <RenderServants />
     </main>
   )
 }

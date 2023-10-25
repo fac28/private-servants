@@ -11,13 +11,14 @@ export default function FilterPrice({ max, setMax }) {
     <fieldset>
       <legend>Price</legend>
       <label htmlFor="max-price">
-        Max price
+        Max price {max}
+        <br></br>
         <input
           type="range"
           id="max-price"
-          min="0.5"
-          max="9"
-          step="0.25"
+          min="0"
+          max="3000"
+          step="5"
           value={max}
           onChange={update}
         />
