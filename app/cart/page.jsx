@@ -1,3 +1,4 @@
+import Test from '../components/Test'
 import ContactForm from '../components/ContactForm'
 
 export default function Cart() {
@@ -23,6 +24,7 @@ export default function Cart() {
     <div className="flex flex-wrap items-start justify-between">
       <ContactForm />
       <div className="flex flex-col items-start justify-around ">
+        sample data:
         <ul>
           {checkout_items.products.map((item) => (
             <li
@@ -35,6 +37,8 @@ export default function Cart() {
           ))}
         </ul>
         <div>
+          actual basket state:
+          <Test />
           <h2>Total Price: £{totalPrice.toFixed(2)}</h2>
         </div>
       </div>

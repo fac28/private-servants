@@ -26,7 +26,7 @@ export default function RenderIndividualServant({ params }) {
       <p>What would you like {servant.name} to do for you? </p>
       <VariantSelect variants={variants} base_price={servant.base_price} />
 
-      <AddToCart />
+      <AddToCart servant_name={servant.name} />
     </>
   )
 }
