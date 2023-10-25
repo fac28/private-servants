@@ -9,13 +9,7 @@ export default function RenderIndividualServant({ params }) {
   const id = params.id
   const servant = selectServantByID(id)
   const variants = listVariants()
-  console.log(variants)
-  const options = variants.map((variant) => {
-    return {
-      value: variant.price_modifier,
-      label: variant.task,
-    }
-  })
+
   return (
     <>
       <div className="card flex flex-col items-center">
@@ -31,8 +25,8 @@ export default function RenderIndividualServant({ params }) {
       </div>
       <p>{servant.about}</p>
       <p>What would you like {servant.name} to do for you? </p>
-      <VariantSelect options={options} />
-      <p>Total Price: £{servant.base_price}</p>
+      <VariantSelect variants={variants} base_price={servant.base_price} />
+
       <AddToCart />
     </>
   )

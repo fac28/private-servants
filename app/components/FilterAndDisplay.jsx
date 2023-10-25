@@ -5,7 +5,6 @@ import FilterPrice from './FilterPrice'
 import RenderFiltered from './RenderFiltered'
 
 export default function FilterAndDisplay({ allServants }) {
-  console.log(allServants)
   const [max, setMax] = useState(10000)
 
   return (
