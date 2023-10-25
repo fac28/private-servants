@@ -1,9 +1,9 @@
-import { Poiret_One } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
 //components
 
 import Navbar from './components/Navbar'
-const poiret = Poiret_One({
+const gotu = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -18,17 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poiret.className}>
+      <body className={gotu.className}>
         <Navbar />
         {children}
       </body>
     </html>
   )
 }
-
-
-
-
-
-
-

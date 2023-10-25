@@ -2,3 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #363062;
+  @apply text-red-50 m-8 font-bold;
+}
+@layer base {
+  h1,
+  h2 {
+    @apply font-bold text-lg my-2;
+  }
+  p {
+    @apply text-red-50 my-3;
+  }
+}
+@layer components {
+  nav {
+    @apply p-4 border-b-2 border-red-50 flex justify-between items-center gap-3 my-3  mx-auto;
+  }
+}
+
+/* card styles */
+.card {
+  @apply bg-red-50
+    shadow-neutral-300
+    rounded-md 
+    py-4 px-4 my-4 
+    relative 
+    overflow-hidden
+    w-72
+    aspect-square;
+}
+.card h3 {
+  @apply font-bold text-[#363062] text-xl 
+    mb-2;
+}
+.card p {
+  @apply my-2 text-[#363062] text-lg font-bold;
+}
+
+.card img {
+  @apply aspect-square
+  rounded-md
+  drop-shadow-sm shadow-slate-900;
+}
