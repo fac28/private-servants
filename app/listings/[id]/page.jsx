@@ -1,7 +1,7 @@
 import React from 'react'
 import { selectServantByID } from '@/lib/model'
 import Image from 'next/image'
-// import { listServants } from '../../lib/model.js'
+import AddToCart from '@/app/components/AddToCart'
 
 export default function RenderIndividualServant({ params }) {
   const id = params.id
@@ -17,6 +17,7 @@ export default function RenderIndividualServant({ params }) {
         priority
       />
       <p>Price: £{servant.base_price}</p>
+      <AddToCart />
       <p>{servant.about}</p>
     </>
   )
