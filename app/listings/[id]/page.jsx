@@ -17,7 +17,7 @@ export default function RenderIndividualServant({ params }) {
         priority
       />
       <p>Price: £{servant.base_price}</p>
-      <AddToCart />
+      <AddToCart servant_name={servant.name} />
       <p>{servant.about}</p>
     </>
   )
