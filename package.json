@@ -11,7 +11,7 @@
     "prettier": "prettier --write \"**/*.{js,jsx,css,md,json,scss}\"",
     "test:e2e": "playwright test",
     "test": "node --test",
-    "seed": "node lib/database/seed.js"
+    "seed": "node database/seed.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -25,6 +25,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.7",
     "autoprefixer": "^10.4.16",
