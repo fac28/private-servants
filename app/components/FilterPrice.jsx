@@ -1,11 +1,7 @@
-'use client'
-import { useState } from 'react'
-
 export default function FilterPrice({ max, setMax }) {
   function update(event) {
     // `+` converts the string value to a number
     setMax(+event.target.value)
-    console.log(max)
   }
   return (
     <fieldset>

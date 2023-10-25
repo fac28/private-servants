@@ -1,3 +1,3 @@
 export default function AddToCart() {
-  return <button>Add to Cart</button>
+  return <button className="btn">Add to Cart</button>
 }

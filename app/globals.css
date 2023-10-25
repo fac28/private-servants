@@ -45,3 +45,14 @@ body {
   rounded-md
   drop-shadow-sm shadow-slate-900;
 }
+/*select*/
+
+.custom-select {
+  @apply text-[#363062] w-72 bg-red-50;
+}
+.btn {
+  @apply text-[#363062] w-40 bg-red-50 rounded-md hover:bg-[#887ece] hover:text-red-50;
+}
+.btn:hover {
+  @apply bg-[#887ece] text-red-50;
+}
