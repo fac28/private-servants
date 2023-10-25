@@ -1,4 +1,4 @@
-import RenderServants from "../components/RenderServants"
+import RenderServants from '../components/RenderServants'
 export default function listings() {
   return (
     <div>
