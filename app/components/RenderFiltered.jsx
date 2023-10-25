@@ -1,13 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function RenderFiltered(props) {
-  const max = props.max
-  const all_servants = props.allServants
+export default function RenderFiltered({ max, allServants, modifier }) {
   return (
     <ul className="flex flex-wrap gap-3 justify-center">
-      {all_servants
-        .filter((servant) => servant.base_price <= max)
+      {allServants
+        .filter((servant) => servant.base_price * modifier <= max)
         .map((servant) => (
           <Link key={servant.id} href={`/listings/${servant.id}`}>
             <li className="card flex flex-col items-center" key={servant.id}>
