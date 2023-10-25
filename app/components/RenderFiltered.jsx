@@ -17,7 +17,7 @@ export default function RenderFiltered({ max, allServants, modifier }) {
                 height={200}
                 priority
               />
-              <p>Price: £{servant.base_price}</p>
+              <p>Price: £{(servant.base_price * modifier).toFixed(2)}</p>
             </li>
           </Link>
         ))}

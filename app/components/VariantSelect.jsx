@@ -22,10 +22,7 @@ export default function VariantSelect({ variants, base_price }) {
         value={selectedOption}
         onChange={setSelectedOption}
       ></Select>
-      <p>
-        Total Price: £
-        {Math.round(base_price * selectedOption.value * 100) / 100}
-      </p>
+      <p>Total Price: £{(base_price * selectedOption.value).toFixed(2)}</p>
     </>
   )
 }
