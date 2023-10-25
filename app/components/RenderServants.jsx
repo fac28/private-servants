@@ -24,5 +24,4 @@ export default function RenderServants() {
       ))}
     </ul>
   )
-  console.log(servant.name)
 }
