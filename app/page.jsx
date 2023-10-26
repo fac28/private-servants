@@ -3,7 +3,7 @@ import RenderServants from './components/RenderServants'
 export default function Home() {
   return (
     <main>
-      <p className="text-lg text-red-50 font-semibold">
+      <p>
         Welcome to Private Servants! We connect you with experienced politicians
         who are ready to put their skills to work on your behalf.{' '}
       </p>
