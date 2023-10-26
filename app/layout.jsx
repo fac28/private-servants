@@ -1,4 +1,4 @@
-import { BasketContext, BasketProvider } from './store'
+import { BasketProvider } from './store'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 //components

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { listVariants, selectServantByID } from '@/lib/model'
 import Image from 'next/image'
 import AddToCart from '@/app/components/AddToCart'

@@ -3,5 +3,5 @@ import { useBasket } from '../store'
 
 export default function Test() {
   const contextArray = useBasket()
-  return <p>{contextArray.basket}</p>
+  return <p>{JSON.stringify(contextArray.basket, null, 2)}</p>
 }
