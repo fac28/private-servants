@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function RenderFiltered({ max, allServants, modifier }) {
   return (
-    <ul className="flex flex-wrap gap-3 justify-center">
+    <ul className="flex flex-wrap gap-12 justify-center">
       {allServants
         .filter((servant) => servant.base_price * modifier <= max)
         .map((servant) => (

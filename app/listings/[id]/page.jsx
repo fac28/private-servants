@@ -3,6 +3,7 @@ import { listVariants, selectServantByID } from '@/lib/model'
 import Image from 'next/image'
 import AddToCart from '@/app/components/AddToCart'
 import VariantSelect from '@/app/components/VariantSelect'
+import CartAndPrice from '@/app/components/CartAndPrice'
 
 export default function RenderIndividualServant({ params }) {
   const id = params.id
@@ -24,9 +25,12 @@ export default function RenderIndividualServant({ params }) {
       </div>
       <p>{servant.about}</p>
       <p>What would you like {servant.name} to do for you? </p>
-      <VariantSelect variants={variants} base_price={servant.base_price} />
 
-      <AddToCart servant_name={servant.name} />
+      <CartAndPrice servant={servant} variants={variants} />
+
+      {/* <VariantSelect variants={variants} base_price={servant.base_price} />
+
+      <AddToCart servant_name={servant.name} /> */}
     </>
   )
 }
