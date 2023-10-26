@@ -11,7 +11,7 @@ export default function AddToCart(props) {
     <button
       onClick={() => {
         {
-          updateCart(props.servant_name)
+          updateCart({ name: props.servant_name, price: props.price })
         }
       }}
     >

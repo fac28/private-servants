@@ -1,21 +1,12 @@
+'use client'
 import Test from '../components/Test'
 import ContactForm from '../components/ContactForm'
-
+import { useBasket } from '../store'
 export default function Cart() {
-  const checkout_items = {
-    products: [
-      {
-        name: 'Boris Johnson',
-        price: 10.99,
-      },
-      {
-        name: 'Theresa May',
-        price: 24.95,
-      },
-    ],
-  }
+  const { basket, setBasket } = useBasket()
+  const checkout_items = [...basket]
 
-  const totalPrice = checkout_items.products.reduce(
+  const totalPrice = checkout_items.reduce(
     (total, product) => total + product.price,
     0
   )
@@ -24,21 +15,18 @@ export default function Cart() {
     <div className="flex flex-wrap items-start justify-between">
       <ContactForm />
       <div className="flex flex-col items-start justify-around ">
-        sample data:
         <ul>
-          {checkout_items.products.map((item) => (
+          {checkout_items.map((item) => (
             <li
               className="flex items-center justify-between w-56 "
               key={item.name}
             >
               <h3>{item.name}</h3>
-              <p>Price: £{item.price}</p>
+              <p>Price: £{item.price.toFixed(2)}</p>
             </li>
           ))}
         </ul>
         <div>
-          actual basket state:
-          <Test />
           <h2>Total Price: £{totalPrice.toFixed(2)}</h2>
         </div>
       </div>
