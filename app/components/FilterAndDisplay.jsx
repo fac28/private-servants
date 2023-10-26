@@ -21,10 +21,6 @@ export default function FilterAndDisplay({ allServants, variants }) {
         <FilterPrice max={max} setMax={setMax} />
         <Select
           className="custom-select"
-          classNames={{
-            control: (state) =>
-              state.isFocused ? 'border-red-600' : 'border-grey-300',
-          }}
           options={options}
           value={selectedOption}
           onChange={setSelectedOption}

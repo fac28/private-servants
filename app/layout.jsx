@@ -4,7 +4,7 @@ import './globals.css'
 //components
 
 import Navbar from './components/Navbar'
-const gotu = Montserrat({
+const mont = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <BasketProvider>
-        <body className={gotu.className}>
+        <body className={mont.className}>
           <Navbar />
           {children}
         </body>

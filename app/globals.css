@@ -1,30 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 body {
-  background: #363062;
-  @apply text-red-50 m-8 font-bold;
+  @apply text-accent m-1 font-bold bg-light;
 }
 @layer base {
   h1,
   h2 {
-    @apply font-bold text-lg my-2;
+    @apply font-bold text-2xl my-2;
   }
+
   p {
-    @apply text-red-50 my-3;
+    @apply text-accent text-lg font-semibold;
   }
 }
 @layer components {
   nav {
-    @apply p-4 border-b-2 border-red-50 flex justify-between items-center gap-3 my-3  mx-auto;
+    @apply p-4 border-b-2 border-accent flex justify-between items-center gap-3 m-0 bg-light max-h-12;
   }
 }
 
 /* card styles */
 .card {
-  @apply bg-red-50
-    shadow-neutral-300
+  @apply bg-accent
+  shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]
     rounded-md 
     py-4 px-4 my-4 
     relative 
@@ -33,25 +33,28 @@ body {
     aspect-square;
 }
 .card h3 {
-  @apply font-bold text-[#363062] text-xl 
+  @apply font-bold text-light text-xl 
     mb-2;
 }
 .card p {
-  @apply my-2 text-[#363062] text-lg font-bold;
+  @apply my-2 text-light text-lg font-bold;
 }
 
 .card img {
-  @apply aspect-square
+  @apply aspect-square  
   rounded-md
   drop-shadow-sm shadow-slate-900;
 }
 /*select*/
 
 .custom-select {
-  @apply text-[#363062] w-72 bg-red-50;
+  @apply text-accent w-72 bg-accent;
+}
+.custom-select:active {
+  @apply text-accent w-72 bg-accent;
 }
 .btn {
-  @apply text-[#363062] w-40 bg-red-50 rounded-md hover:bg-[#887ece] hover:text-red-50;
+  @apply text-dark w-40 bg-accent rounded-md hover:bg-[#887ece] hover:text-red-50;
 }
 .btn:hover {
   @apply bg-[#887ece] text-red-50;

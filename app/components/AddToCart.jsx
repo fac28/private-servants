@@ -9,6 +9,7 @@ export default function AddToCart(props) {
 
   return (
     <button
+      className="btn"
       onClick={() => {
         {
           updateCart(props.servant_name)
