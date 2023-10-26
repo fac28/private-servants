@@ -2,8 +2,12 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
 
-export default function VariantSelect({ variants, base_price }) {
-  const [selectedOption, setSelectedOption] = useState({ value: 1 })
+export default function VariantSelect({
+  variants,
+  base_price,
+  selectedOption,
+  setSelectedOption,
+}) {
   const options = variants.map((variant) => {
     return {
       value: variant.price_modifier,
